@@ -1,7 +1,7 @@
 import React from "react";
 import { ThemeProvider } from "./Components/GlobalContext";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./Components/Navbar";
+import Navbar from "./Components/Header";
 import Footer from "./Components/Footer";
 import Home from "./Routes/Home";
 import Contact from "./Routes/Contact";

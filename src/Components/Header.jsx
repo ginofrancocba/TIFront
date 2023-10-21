@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon, faSun} from '@fortawesome/free-solid-svg-icons'; 
 import { Link } from 'react-router-dom';
 import { useTheme } from './GlobalContext';   
+import './Header.css';
 
 
 function Navbar ()  {
@@ -11,15 +12,13 @@ function Navbar ()  {
   return (
       <div>
            <nav>
-            <div className='naoky'>
-                <h3>BY SECTA</h3>
-                <img className='logo' src='/images/logo.png' alt='Logo secta'/>
+            <div className='lema'>
+                <Link className='nav-a' to="/">
+                  <img className='logo' src='/images/logo.png' alt='Logo secta'/>Lema BY SectArg
+                </Link>
             </div>
-            <div>
+            <div className='nav-ul'>
                 <ul>          
-                    <li>
-                      <Link className='nav-a' to="/">Home</Link>
-                    </li>
                     <li>
                       <Link className='nav-a' to="/contact">Contacto</Link>
                     </li>
@@ -28,10 +27,16 @@ function Navbar ()  {
                     </li>
                 </ul>
             </div>
-            <button
+            <button>
+            <Link  to="">Crear cuenta</Link>  
+            </button>
+            <button>
+              <Link to="">Iniciar sesión</Link>  
+            </button>
+            <button className='theme'
              onClick={toggleTheme}>
              <FontAwesomeIcon icon={theme === 'dark' ? faSun : faMoon} /> 
-             </button>
+            </button>
           </nav>
       </div>
     );
