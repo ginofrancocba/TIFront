@@ -14,7 +14,7 @@ function Navbar ()  {
            <nav>
             <div className='lema'>
                 <Link className='nav-a' to="/">
-                  <img className='logo' src='/images/logo.png' alt='Logo secta'/>Lema BY SectArg
+                  <img className='logo' src='/images/logo.png' alt='Logo secta'/>Más que un tour...
                 </Link>
             </div>
             <div className='nav-ul'>
@@ -27,7 +27,7 @@ function Navbar ()  {
                     </li>
                 </ul>
             </div>
-            <button>
+            <button className='btn-cta'>
             <Link  to="">Crear cuenta</Link>  
             </button>
             <button>

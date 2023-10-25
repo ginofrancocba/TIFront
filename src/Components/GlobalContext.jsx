@@ -4,7 +4,6 @@ import { themeReducer, initialState } from "./themeReducer";
 
 const ThemeContext = createContext();
 
-
 export const ThemeProvider = ({ children }) => {
   const [state, dispatch] = useReducer(themeReducer, initialState);
 

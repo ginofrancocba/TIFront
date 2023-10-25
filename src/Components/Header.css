@@ -22,21 +22,21 @@
     --salmon-fume:rgb(252, 84, 66);
     --semi-oscuro: #8c8c8e;
     --theme-dark: rgb(45, 41, 41);
-    --theme-white: rgb(255,255,255);
+    --theme-white: rgb(255, 255, 255);
     --verde: rgb(54, 225, 157);
     --verde-fran: rgb(177, 214, 188);
     --verde-hover: rgb(161, 177, 73);
     --verde-fuentes: rgb(24, 106, 59);
+    --blanco:  rgb(255, 255, 255);
     } 
 
 nav {
     display: flex;
     position: fixed;
-    top: 0;
     width: 100%;
     height: 25%;
     z-index: 1;
-    background-color: var(--grey-button);
+    background-color: var(--blanco);
     justify-content: space-around;
 }
 
@@ -44,7 +44,7 @@ nav {
     display: flex;
     width: 25%;
     font-size: 1em;
-    color: white;
+    color: var(--app-grey);
     align-items: center;
     justify-content:center;
     text-align:center;
@@ -82,7 +82,7 @@ li {
 
 button {
     color: var(--app-grey);
-    font-size: 25px;
+    font-size: 1.5rem;
     border: none;
     border-radius: 24px;
     cursor: pointer;
@@ -101,6 +101,40 @@ button:hover {
     border: 3px solid var(--azul-hover);  
 }
 
+.btn-cta {
+    color: var(--blanco);
+}
+
 .theme {
     width: 70px;
 }
+
+@media (max-width: 600px) {
+    Header {
+        height: 70px;
+    }
+    nav {
+        
+        flex-direction: column;
+    }
+
+    .logo {
+        width: 50%;
+        border-radius: 5px;
+        align-self: center;
+        text-align: center;
+        justify-content: center;
+        padding: 0px 10px 0px 0px;
+        order: 1;
+     
+    }
+
+    .lema {
+        order: 2;
+        align-self: center;
+        width: 80%;
+        font-size: 0.8em;
+      }
+
+}
+

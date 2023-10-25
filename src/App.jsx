@@ -7,6 +7,7 @@ import Home from "./Routes/Home";
 import Contact from "./Routes/Contact";
 import Favs from "./Routes/Favs";
 import Detail from "./Routes/Detail";
+import Registro from "./Routes/Registro";
 import NotFound from "./Routes/NotFound";
 
 
@@ -22,6 +23,7 @@ function App() {
                  <Route path="contact" element={<Contact/>} />
                  <Route path="favs" element={<Favs/>} />
                  <Route path="detail/:id" element={<Detail/>} />
+                 <Route path="agregar" element={<Registro/>} />
                  <Route path="*" element={<NotFound/>} />
               </Routes>  
               <Footer />
