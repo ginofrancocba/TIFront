@@ -8,6 +8,7 @@ import Contact from "./Routes/Contact";
 import Favs from "./Routes/Favs";
 import Detail from "./Routes/Detail";
 import NotFound from "./Routes/NotFound";
+import Body from "./Components/Body";
 
 
 function App() {
@@ -24,8 +25,9 @@ function App() {
                  <Route path="detail/:id" element={<Detail/>} />
                  <Route path="*" element={<NotFound/>} />
               </Routes>  
+              <Body/>
               <Footer />
-           </Router>      
+           </Router>               
     </div>
  </ThemeProvider>
 );
