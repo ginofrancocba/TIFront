@@ -1,6 +1,6 @@
 
     body {
-        background-color: yellow; /* Puedes cambiar esto al color que prefieras */
+        background-color: #b5d7e2;
         height: 100%;
         margin: 0; 
         padding: 0; 
@@ -10,9 +10,7 @@
 
     .buscador {
         width: 200%;
-        background-color: blue; 
-        padding: 20px; 
-       
+        padding: 20px;      
         box-sizing: border-box;
        
     }
@@ -26,3 +24,29 @@
         justify-content: center;
         align-items: center;
     }
+
+    @media (max-width: 600px) {
+        body {
+              
+            
+          
+          /* Estilos específicos para pantallas pequeñas */
+        }
+      
+        /* Otros estilos específicos para pantallas pequeñas */
+      }
+      
+      /* Estilos para pantallas medianas y grandes */
+      @media (min-width: 601px) {
+        body {
+          /* Estilos específicos para pantallas medianas y grandes */
+        }
+      
+        /* Otros estilos específicos para pantallas medianas y grandes */
+      }
+      
+      
+      
+      
+      
+      

@@ -5,6 +5,7 @@ import Recomendaciones from './Recomendaciones';
 import './Body.css';
 
 const Body = () => {
+  
   return (
     <><div class='buscador'>
           <Buscador />

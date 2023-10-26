@@ -17,13 +17,21 @@ const Buscador = () => {
     <div>
       <h2>Buscador</h2>
       <form onSubmit={handleSubmit}>
+      <input
+          type="text"
+          value={busqueda}
+          onChange={handleInputChange}
+          placeholder= "Ciudad de Argentina..."
+          className='separacion'
+        />
         <input
           type="text"
           value={busqueda}
           onChange={handleInputChange}
-          placeholder="Buscar..."
+          placeholder= "Fecha..."
           className='separacion'
         />
+        
         <button type="submit"  style={{ color: 'red' }}>Buscar</button>
       </form>
     </div>
