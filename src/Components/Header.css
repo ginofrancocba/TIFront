@@ -28,6 +28,10 @@ nav {
     padding: 0px 20px 0px 0px;
 }
 
+a.nav-a {
+    color: var(--negro);
+}
+
 .nav-ul {
     display: flex;
     width: 40%;
@@ -35,18 +39,17 @@ nav {
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
-    color: var(--negro);
+    
 }
 
-.nav a {
-    color: var(--negro);
-}
+
 
 li {
     display:inline-flex;
     padding: 2rem;
     list-style: none;
     font-size: 25px;
+    text-decoration: none;
 }
 
 button {
