@@ -13,10 +13,10 @@ import NotFound from "./Routes/NotFound";
 function App() {
 
   return (
-    <ThemeProvider>
+    <ThemeProvider>z
     <div className= "app" >
            <Router>
-              <Navbar />
+              <Navbar/>
               <Routes>              
                  <Route index element={<Home/>}/>
                  <Route path="contact" element={<Contact/>} />
@@ -24,7 +24,7 @@ function App() {
                  <Route path="detail/:id" element={<Detail/>} />
                  <Route path="*" element={<NotFound/>} />
               </Routes>  
-              <Footer />
+              <Footer/>
            </Router>      
     </div>
  </ThemeProvider>

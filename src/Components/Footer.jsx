@@ -1,11 +1,17 @@
 import React from 'react'
+import './Footer.css'
 
 const Footer = () => {
   return (
     <footer>
-        <p>Powered by SECTA solutions</p>
-        <img className='foo-logo' src="/images/logo.png" alt='logo secta' />
-        <p>Equipo 2</p>
+      <div class="footer-content">
+        <div>
+          <img src="/images/logo.png" alt='logo-sectArgTour'/>
+        </div>
+        <div>
+          <p>© 2023 - Equipo 2</p>
+        </div>
+      </div>
     </footer>
   )
 }
