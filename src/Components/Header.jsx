@@ -14,7 +14,7 @@ function Navbar ()  {
            <nav>
             <div className='lema'>
                 <Link className='nav-a' to="/">
-                  <img className='logo' src='/images/logo.png' alt='Logo secta'/>Más que un tour...
+                  <img className='logo' src='/images/logo-1.png' alt='Logo SectArg tour'/>Más que un tour...
                 </Link>
             </div>
             <div className='nav-ul'>
