@@ -20,7 +20,7 @@ nav {
 }
 
 .logo {
-    width: 50%;
+    width: 40%;
     height: 100%;
     align-items: center;
     text-align: center;
@@ -38,11 +38,8 @@ a.nav-a {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    text-align: center;
-    
+    text-align: center;   
 }
-
-
 
 li {
     display:inline-flex;
@@ -62,7 +59,7 @@ button {
     justify-content: center;
     color: var(--amarelo);
     transition: border-color 0.25s;
-    margin: 5rem 0px 5rem 0px; 
+    margin: 5rem 20px 5rem 0px; 
     box-shadow: var(--celeste) 0px 0px 4px, var(--oscuro) 0px 8px 31px;
     border: 1px solid transparent var(--button-grey);
 }
@@ -76,7 +73,7 @@ button:focus-visible {
   }
 
 .btn-cta {
-    color: var(--blanco);
+    color: var(--negro);
 }
 
 .theme {

@@ -6,7 +6,7 @@ import { useTheme } from './GlobalContext';
 import './Header.css';
 
 
-function Navbar ()  {
+function Header ()  {
   const { theme, toggleTheme} = useTheme();
     
   return (
@@ -42,4 +42,4 @@ function Navbar ()  {
     );
   }
 
-  export default Navbar;
+  export default Header;

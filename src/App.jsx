@@ -1,7 +1,6 @@
 import React from "react";
 import { ThemeProvider } from "./Components/GlobalContext";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./Components/Header";
 import Footer from "./Components/Footer";
 import Home from "./Routes/Home";
 import Contact from "./Routes/Contact";
@@ -9,6 +8,7 @@ import Favs from "./Routes/Favs";
 import Detail from "./Routes/Detail";
 import Registro from "./Routes/Registro";
 import NotFound from "./Routes/NotFound";
+import Header from "./Components/Header";
 
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
     <ThemeProvider>
     <div className= "app" >
            <Router>
-              <Navbar />
+              <Header />
               <Routes>              
                  <Route index element={<Home/>}/>
                  <Route path="contact" element={<Contact/>} />
